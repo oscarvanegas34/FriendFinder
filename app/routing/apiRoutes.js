@@ -7,7 +7,7 @@ module.exports = function(app) {
     res.json(friendData);
   });
 
-  // Recieves data from post, sums the two arrays and looks for the lowest difference in answers.  The nreturns the match object.
+  // Recieves data from post, sums the two arrays and looks for the lowest difference in answers.  The returns the match object.
   app.post('/api/friends', function(req, res){
       var lowestTotalDifference = 1000;
       var match;
